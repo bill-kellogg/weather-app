@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    {{>header}}
+    <form class="search__form">
+      <label for="site-search">Enter a location:</label>
+      <input type="search" id="weather-search__input" name="search" aria-label="Weather Search by location">
+      <button class="weather-search__button">Search</button>
+    </form>
+
+    <div class="weather-response__wrapper">
+      <p class="error-message"></p>
+      <p class="location"></p>
+      <p class="current-temp"></p>
+    </div>
+
+    {{> footer}}
+  </body>
+  <script src="/js/app.js"></script>
+</html>
